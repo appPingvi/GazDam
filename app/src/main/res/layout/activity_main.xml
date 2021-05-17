@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/collapsingToolbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/toolbar"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_WhatsAppp"
+                    android:layout_width="45dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_gravity="center"
+                    android:layout_height="45dp"
+                    android:background="@drawable/ic_whatsapp_24"
+                    android:drawableBottom="@drawable/ic_whatsapp_24"
+                    android:onClick="onButtonClick"
+                    app:backgroundTint="@color/buttons" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_call"
+                    android:layout_width="54dp"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:drawableLeft="@drawable/ic_call_24"
+                    android:onClick="onButtonClick"
+                    app:backgroundTint="@color/buttons" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_screen"
+
+                    android:layout_gravity="center"
+                    android:layout_width="54dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:drawableLeft="@drawable/ic_camera_24"
+                    android:onClick="onButtonClick"
+                    app:backgroundTint="@color/buttons" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_www"
+
+                    android:layout_gravity="center"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="onButtonClick"
+                    android:text="www"
+                    android:textAlignment="center"
+                    android:textColor="#353535"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    app:backgroundTint="@color/buttons" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_err"
+                    android:layout_gravity="center"
+                    android:layout_width="65dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="sans-serif-black"
+                    android:onClick="onButtonClick"
+                    android:text="Err"
+                    android:textAlignment="center"
+                    android:textColor="#353535"
+                    android:textSize="10sp"
+                    app:backgroundTint="@color/buttons" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_exit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/ic__exit_24"
+                    android:onClick="onButtonClick"
+                    app:backgroundTint="@color/buttons" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

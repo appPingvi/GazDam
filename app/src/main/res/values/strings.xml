@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Компания</string>
+    <string name="full_uri">https://gazdam.ru/</string>
+    <string name="short_uri">gazdam.ru</string>
+    <string name="url_err">https://gazdam.ru/kod.html</string>
+    <string name="savescreen">Screenshot успешно сохранен</string>
+    <string name="whatsapplink">https://api.whatsapp.com/send?phone=</string>
+    <string name="phonenumber">+79381313552</string>
+    <string name="welcomePage">https://gazdam.ru/android.html</string>
+
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
+    <string name="fcm_message">FCM Message</string>
+
+    <string name="msg_token_fmt" translatable="false">FCM registration Token: %s</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="buttonOkDialog">Понятно</string>
+</resources>

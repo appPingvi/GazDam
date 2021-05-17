@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "927714095406",
+    "project_id": "gazdam-4df72",
+    "storage_bucket": "gazdam-4df72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927714095406:android:9923a7f633f49cc49e0abf",
+        "android_client_info": {
+          "package_name": "com.pingvi.gazdam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927714095406-s53a289hf9336v9ai83evcfsfqeohi5b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcUAOHcQPp9GVyYEEt2tnfHC3p7HzX_5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927714095406-s53a289hf9336v9ai83evcfsfqeohi5b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
